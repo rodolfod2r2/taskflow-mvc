@@ -31,7 +31,7 @@ public class TeamController {
     }
 
     @GetMapping(value = "/team/pages", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, Object>> getAllArchivePages(
+    public ResponseEntity<Map<String, Object>> getAllTeamPages(
             @RequestParam(defaultValue = "0") int numberPage,
             @RequestParam(defaultValue = "3") int intervalPage
     ) {

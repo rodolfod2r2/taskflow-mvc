@@ -31,7 +31,7 @@ public class UserController {
     }
 
     @GetMapping(value = "/user/pages", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Map<String, Object>> getAllArchivePages(
+    public ResponseEntity<Map<String, Object>> getAllUserPages(
             @RequestParam(defaultValue = "0") int numberPage,
             @RequestParam(defaultValue = "3") int intervalPage
     ) {
