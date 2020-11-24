@@ -2,19 +2,16 @@ package com.github.rodolfod2r2.mvc.taskflow.document;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Collection;
 import java.util.Date;
 
-@Document
+@Document(collection = "Task")
 @Getter
 @Setter
-public class Task {
+public class Task extends AbstractDocumentModel {
 
-    @Id
-    private String id;
     private String name;
     private String description;
     private Date dtIni;

@@ -2,16 +2,13 @@ package com.github.rodolfod2r2.mvc.taskflow.document;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
+@Document(collection = "Gamification")
 @Getter
 @Setter
-public class Gamification {
+public class Gamification extends AbstractDocumentModel {
 
-    @Id
-    private String id;
     private String name;
     private String description;
     private int points;

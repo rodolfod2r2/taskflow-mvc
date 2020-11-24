@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TaskflowMvcApplication {
+public class TaskflowApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TaskflowMvcApplication.class, args);
+        SpringApplication.run(TaskflowApplication.class, args);
     }
 
 }
